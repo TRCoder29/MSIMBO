@@ -1,0 +1,7 @@
+April 5
+Finish:
+
+*Web-New (Need: Page Separator, Remove Hover Underline)
+*Web-Edit (Move Delete Button Over to the Middle, Remove Hover Underline)
+*Widget-List (Something is wrong with the entire thing. There are things showing up and being highlighted that shouldn't be)
+*StyleA1 Pages (Make sure everything is what's on the teacher's HTML and CSS)
