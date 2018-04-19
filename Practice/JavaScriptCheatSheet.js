@@ -713,3 +713,7 @@ console.log(checkNums2(50, 50))
 // }
 // checkNums(100, 100)
 
+// var myVariable = 38 % 5;
+// document.write(myVariable);
+
+
