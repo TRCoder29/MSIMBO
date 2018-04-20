@@ -22,12 +22,12 @@
 //Underscore
 //var MyFavoriteNumber=77;
 
-// var the_date=new Date();
-// document.write("<h2>The Month</h2>");
-// document.write(the_date.getMonth()+1);
+var the_date=new Date();
+document.write("<h2>The Month</h2>");
+document.write(the_date.getMonth()+1);
 
-// document.write("<h2>The Year</>");
-// document.write(the_date.getFullYear());
+document.write("<h2>The Year</>");
+document.write(the_date.getFullYear());
 
 // var colors=['red', 'blue', 'green', 'pink'];
 // var colors=new Array('red', 'blue', 'green', 'pink');
@@ -689,17 +689,17 @@
 // console.log(checkNums(50, 50))
 
 // Shorter way to do this:
-function checkNums2(num1, num2){
-	if (num2==num1){
-		return -1;
-	} else {
-		return num2>num1;
-	}
-}
+// function checkNums2(num1, num2){
+// 	if (num2==num1){
+// 		return -1;
+// 	} else {
+// 		return num2>num1;
+// 	}
+// }
 
-console.log(checkNums2(100, 200))
-console.log(checkNums2(235, 123))
-console.log(checkNums2(50, 50))
+// console.log(checkNums2(100, 200))
+// console.log(checkNums2(235, 123))
+// console.log(checkNums2(50, 50))
 
 // Shows up on the page, but not in the console:
 // function checkNums(num1, num2){
@@ -712,4 +712,8 @@ console.log(checkNums2(50, 50))
 // }
 // }
 // checkNums(100, 100)
+
+// var myVariable = 38 % 5;
+// document.write(myVariable);
+
 
