@@ -49,8 +49,8 @@ document.write(the_date.getFullYear());
 // alert(colors.length);
 
 // var person={
-// 	firstName: "Taja",
-// 	lastName: "Ricketts",
+// 	firstName: "Alice",
+// 	lastName: "Smith",
 // 	age: 32,
 // 	Children: ['Alice', 'Bob', 'Camile']
 // }
@@ -516,7 +516,7 @@ document.write(the_date.getFullYear());
 // Or, you can use this:
 // Adding from 1 to num
 // Note: Var answer is 0, because of the possibility that i<=0.
-// Remember: i=i-1 is i++
+// Remember: i=i+1 is i++
 // function SimpleAdding(num){
 // 	var answer = 0;
 // 	for (var i=1; i<=num; i++){
@@ -717,3 +717,13 @@ document.write(the_date.getFullYear());
 // document.write(myVariable);
 
 
+
+// function test(){
+// 	var x = document.getElementById('txt');
+// 	var n = x.innerHTML;
+// 	x.innerHTML = n*2;
+// }
+
+// console.log(''==false);
+
+// alert("Hello World!")

@@ -5,31 +5,76 @@
 // Questions
 // 1.	Write the function printInt(n) taking one parameter n and print all natural numbers from 1 to n in console.
 
-function printInt(n){}
-
 // function printInt(num){
-// 	// var num = 1;
-// 	for (var num=0; num<=100; num++){
-// 		document.write(function printInt(num));
+// 	for(i=1; i<=100; i++){
+// 		console.log(i);
 // 	}
-
 // }
-	
 
+// printInt(100);
+
+// Examples from class:
+
+// var i = 1;
+// while (i<=n){
+// 	console.log(i);
+// 	i++;
+// }
+
+// or
+// for (var i=1; 1<=n; i++){
+// 	console.log(i);
+// }
 
 // 2.	Write the function printIntRev(n) taking one parameter n and  print all natural numbers in reverse (from n to 1) in console.
 
-// function printIntRev(n){}
+// function printIntRev(num){
+// 	for(i=100; i>=1; i--){
+// 		console.log(i);
+// 	}
+// }
 
+// printIntRev(100);
 
-// 3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’ if x is a string; and return boolean if x is a boolean. Otherwise returns -1. 
+// *3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’ if x is a string; and return boolean if x is a boolean. Otherwise returns -1. 
+
+// function checkInput(x)
+// Take one parameter x
+// Return the string ‘number’ if x is a number;
+// Return the string ‘string’ if x is a string;
+// Return boolean if x is a boolean.
+// Otherwise returns -1. 
+
+// function checkInput(x){
+// 	var x=[1,2,3,4,5, 'one', 'two', 'three', 'four', 'five']
+	// if(x){
+// 	return true
+//  } else if(x){
+// 	return false
+//  } else if (num1==num2){
+// 	return -1
+// }
+// }
+
+// checkInput()
+
 // E.g. checkInput(5) => ‘number’
 //        checkInput(‘hello’)=> ‘string’
 //        checkInput(‘5’) => ‘string’
 //        checkInput(true)=> boolean
 //        checkInput(none) => -1
 
-// function checkInput(x){}
+// function checkInput(x){
+	// if(x){
+// 	return true
+//  } else if(x){
+// 	return false
+//  } else if (num1==num2){
+// 	return -1
+// }
+// }
+// console.log(checkNums(100, 200))
+
 
 // 4.	Write the function simpleEvenAdding(num) taking a number and add up all the even numbers from 1 to num. 
 // 	Examples: simpleEvenAdding(5) => 6 (because 2+4 = 6)
@@ -38,7 +83,9 @@ function printInt(n){}
 //                   simpleEvenAdding(1) => 0
 // 	       simpleEvenAdding(0) => 0
 
-// simpleEvenAdding(num){}
+// function simpleEvenAdding(num){}
+
+
 
 // 5.	Write the function letterCapitalize(str) taking a string and capitalizaed the first letter of each word. The given words will be separated by only one space.
 // 	Examples:
@@ -47,7 +94,12 @@ function printInt(n){}
 	
 // Hint: There is a built-in function in javaScript that change string into uppercase. There is also function to separate string into an array of characters.
 
-// function letterCapitalize(str){}
+function letterCapitalize("hello"){
+	console.log();
+}
+letterCapitalize("".toUpperCase())
+
+
 
 // 6.	Write the function simpleReverse(str) taking a string and return the string in reversed order. 
 // 	Examples:
@@ -109,3 +161,47 @@ function printInt(n){}
 
 // Deliverables
 // 	Send your assignment2.js while email to shiyu3169@gmail.com
+
+// Note: Extra credit for finding more than one way to answer the question.
+
+
+// Hints:
+// myvar = true;
+// console.log(typeof 1==1)
+
+// // Splitting strings into single letters:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split("");
+// console.log(myArr);
+
+// // Splitting strings into an array:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split(",");
+// console.log(myArr);
+
+// // Reverse
+// var myArr = ["hello", "world"];
+// console.log(myArr.reverse());
+
+// // Uppercase
+// console.log("Hello".toUpperCase())
+
+// // Pull out the different items within a string:
+// console.log("hello".slice(2, 3))
+
+// // or
+// console.log("hello".substring(1))
+
+// // Find the maximum number:
+// console.log(Math.max(1,2,3,4))
+
+// // Find the minimum number:
+// console.log(Math.min(1,2,3,4))
+
+// // To parse out integers:
+// // This is the initial equation: console.log(parseInt(100/55)).
+// // Now, we can isolate just the integers of it, using:
+// console.log(parseInt(100/55))
+
+// // or
+// console.log(100%55)
