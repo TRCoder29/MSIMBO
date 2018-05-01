@@ -37,6 +37,11 @@
 // printIntRev(100);
 
 // *3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’ if x is a string; and return boolean if x is a boolean. Otherwise returns -1. 
+// E.g. checkInput(5) => ‘number’
+//        checkInput(‘hello’)=> ‘string’
+//        checkInput(‘5’) => ‘string’
+//        checkInput(true)=> boolean
+//        checkInput(none) => -1
 
 // function checkInput(x)
 // Take one parameter x
@@ -46,37 +51,13 @@
 // Otherwise returns -1. 
 
 // function checkInput(x){
-// 	var x=[1,2,3,4,5, 'one', 'two', 'three', 'four', 'five']
-	// if(x){
-// 	return true
-//  } else if(x){
-// 	return false
-//  } else if (num1==num2){
-// 	return -1
-// }
-// }
-
-// checkInput()
-
-// E.g. checkInput(5) => ‘number’
-//        checkInput(‘hello’)=> ‘string’
-//        checkInput(‘5’) => ‘string’
-//        checkInput(true)=> boolean
-//        checkInput(none) => -1
-
-// function checkInput(x){
-	// if(x){
-// 	return true
-//  } else if(x){
-// 	return false
-//  } else if (num1==num2){
-// 	return -1
-// }
-// }
-// console.log(checkNums(100, 200))
 
 
-// 4.	Write the function simpleEvenAdding(num) taking a number and add up all the even numbers from 1 to num. 
+// checkInput(5)
+
+
+
+// *4.	Write the function simpleEvenAdding(num) taking a number and add up all the even numbers from 1 to num. 
 // 	Examples: simpleEvenAdding(5) => 6 (because 2+4 = 6)
 // 	       simpleEvenAdding(10) => 30 (because 2+4+6+8+10 = 30)
 // 	       simpleEvenAdding(11) => 6 (because 2+4+6+8+10 = 30)
@@ -85,19 +66,48 @@
 
 // function simpleEvenAdding(num){}
 
+function OddAdding(num){
+	var answer = 1;
+	for (var i=num; i>1; i=i-1){
+		answer=answer+i;
+	}
+	return answer;
+}
+console.log(OddAdding(5));
+
+// a=0
+// 1) i=1, a=0+1=1
+// 2) i=3, a=1+3=4
+// 3) i=5, a=4+5=9
+// 4) i=7, a=9+7=16
+// 5) i=9, a=16+9=25
+
+// a=0
+// 1) i=2, a=0+2=2
+// 2) i=4, a=2+4=6
+// 3) i=6, a=4+5=9
+// 4) i=7, a=9+7=16
+// 5) i=9, a=16+9=25
 
 
-// 5.	Write the function letterCapitalize(str) taking a string and capitalizaed the first letter of each word. The given words will be separated by only one space.
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+// *5.	Write the function letterCapitalize(str) taking a string and capitalizaed the first letter of each word. The given words will be separated by only one space.
 // 	Examples:
 // 		letterCapitalize(“hello world”) = “Hello Word”
 // letterCapitalize(“you cannot find the answer online”) = “You Cannot Find The Answer Online”
 	
 // Hint: There is a built-in function in javaScript that change string into uppercase. There is also function to separate string into an array of characters.
 
-function letterCapitalize("hello"){
-	console.log();
-}
-letterCapitalize("".toUpperCase())
+// function letterCapitalize("hello"){}
 
 
 
