@@ -5,36 +5,30 @@
 // Questions
 // 1.	Write the function printInt(n) taking one parameter n and print all natural numbers from 1 to n in console.
 
-// function printInt(num){
-// 	for(i=1; i<=100; i++){
-// 		console.log(i);
-// 	}
-// }
+function printInt(num){
+	for(i=1; i<=num; i++){
+		console.log(i);
+	}
+}
 
-// printInt(100);
+// printInt(30);
 
-// Examples from class:
-
-// var i = 1;
-// while (i<=n){
+// while (i<=num;){
 // 	console.log(i);
 // 	i++;
 // }
 
-// or
-// for (var i=1; 1<=n; i++){
-// 	console.log(i);
-// }
+// printInt(30);
 
 // 2.	Write the function printIntRev(n) taking one parameter n and  print all natural numbers in reverse (from n to 1) in console.
 
-// function printIntRev(num){
-// 	for(i=100; i>=1; i--){
-// 		console.log(i);
-// 	}
-// }
+function printIntRev(num){
+	for(i=num; i>=1; i--){
+		console.log(i);
+	}
+}
 
-// printIntRev(100);
+// printIntRev(40);
 
 // *3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’ if x is a string; and return boolean if x is a boolean. Otherwise returns -1. 
 // E.g. checkInput(5) => ‘number’
@@ -50,55 +44,68 @@
 // Return boolean if x is a boolean.
 // Otherwise returns -1. 
 
-// function checkInput(x){
+function checkInput(x){
+	//if x is a number
+	if(typeof x == 'number') {
+		return 'number';
+	// if x is a string
+	} else if (typeof x == 'string') {
+		return 'string';
+	// if x is a boolean
+	} else if (typeof x == 'boolean') {
+		return 'boolean';
+	// otherwise 
+	} else {
+		return -1;
+	}
+}
 
+// console.log(checkInput(true));
 
-// checkInput(5)
-
+// Switch statement would also work for this.
 
 
 // *4.	Write the function simpleEvenAdding(num) taking a number and add up all the even numbers from 1 to num. 
 // 	Examples: simpleEvenAdding(5) => 6 (because 2+4 = 6)
 // 	       simpleEvenAdding(10) => 30 (because 2+4+6+8+10 = 30)
-// 	       simpleEvenAdding(11) => 6 (because 2+4+6+8+10 = 30)
-//                   simpleEvenAdding(1) => 0
+// 	       simpleEvenAdding(11) => 30 (because 2+4+6+8+10 = 30)
+//         simpleEvenAdding(1) => 0
 // 	       simpleEvenAdding(0) => 0
 
-// function simpleEvenAdding(num){}
-
-function OddAdding(num){
-	var answer = 1;
-	for (var i=num; i>1; i=i-1){
+function simpleEvenAdding(num){
+	var answer = 0;
+	for(var i=0; i<=num; i+=2){
 		answer=answer+i;
 	}
 	return answer;
 }
-console.log(OddAdding(5));
 
-// a=0
-// 1) i=1, a=0+1=1
-// 2) i=3, a=1+3=4
-// 3) i=5, a=4+5=9
-// 4) i=7, a=9+7=16
-// 5) i=9, a=16+9=25
+// console.log(simpleEvenAdding(5));
 
-// a=0
-// 1) i=2, a=0+2=2
-// 2) i=4, a=2+4=6
-// 3) i=6, a=4+5=9
-// 4) i=7, a=9+7=16
-// 5) i=9, a=16+9=25
+// From class:
+// function simpleAdding(num){
+// 	let result = 0;
+// 	// loop from 1 to n
+// 	for(let i=1; i<= n; i++){
+// 		result +=i;
+// 	}
+// 	return result;
+// }
+// console.log(simpleAdding());
 
-
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+// function simpleOddAdding(n){
+// 	// the result of adding
+// 	var result = 0;
+// 	// loop from 1 to n
+// 	for (let i=1; 1<=n; i++){
+// 		// check if i is odd number
+// 		if (i%2 ==1){
+// 			result +=i;
+// 		}
+// 		return result;
+// 	}
+// }
+// console.log(simpleOddAdding());
 
 // *5.	Write the function letterCapitalize(str) taking a string and capitalizaed the first letter of each word. The given words will be separated by only one space.
 // 	Examples:
@@ -107,20 +114,54 @@ console.log(OddAdding(5));
 	
 // Hint: There is a built-in function in javaScript that change string into uppercase. There is also function to separate string into an array of characters.
 
-// function letterCapitalize("hello"){}
+// function letterCapitalize(str){
+// 	str.split(" ").slice(1).toUpperCase();
+// 	// console.log(str.toUpperCase());
+// 	return;
+// }
+
+// letterCapitalize();
+
+// Class Hint:
+// function letterCapitalize (str){
+// 	// split str into array of words
+// 	var strArray = str.split(" ")
+// 	return strArray;
+// }
 
 
-
-// 6.	Write the function simpleReverse(str) taking a string and return the string in reversed order. 
+// *6.	Write the function simpleReverse(str) taking a string and return the string in reversed order. 
 // 	Examples:
 // 		simpleReverse(‘hello’) => ‘olleh’
 // 		simpleReverse(‘I Love Code’) => ‘edoC evoL I’
 
 // Hint: Think of how you can loop through a string or array of characters backwards to produce a new string
 
-// function simpleReverse(str){}
+// function simpleReverse(str){	
+// 	// split string
+// 	var splitString = str.split();
+// 	// reverse string
+// 	var reverseString = splitString.reverse();
+// 	console.log(reverseString);
+// }
+	
+// simpleReverse("words");
 
-// 7.	Write the function findDiff(arr) taking a array of numbers as parameter and return the difference between the maximum number and the minimum number (max - min). 
+// // Splitting strings into single letters:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split("");
+// console.log(myArr);
+
+// // Reverse
+// var myArr = ["hello", "world"];
+// console.log(myArr.reverse());
+
+// Play around with these commands:
+// "hello".split("")
+// "hello"[0]
+
+
+// *7.	Write the function findDiff(arr) taking a array of numbers as parameter and return the difference between the maximum number and the minimum number (max - min). 
 // 	Examples:
 // 	findDiff([1,2,4,6,20, 3]) => 19 (Because 20 - 1 = 19)
 // 	findDiff([24, 22, 23, 22, 24]) => 2 (Because 24 - 22 = 2)
@@ -128,7 +169,22 @@ console.log(OddAdding(5));
 // findDiff([1]) => 0;
 // findDiff([]) => 0;
 
-// function findDiff(arr){}
+function findDiff(arr){
+// Create an array
+var numArray = [2, 7, 9, 11, 16, 18, 20, 29];
+
+var maxArray = Math.max(numArray);
+var minArray = Math.min(numArray);
+
+// Equation for Difference:
+arr = maxArray-minArray;
+
+// Return Diff
+return arr;
+}
+
+console.log(findDiff());
+
 
 // 8.	Write the function timeConvert(num) taking a number as parameter and return the number of hours and minutes the parameter converts to. Seperate the number of hours and minutes with a colon.
 // 	Example:
@@ -139,6 +195,28 @@ console.log(OddAdding(5));
 //     	Hints: Dividing and modulo the number 60.
 
 // function timeConvert(num){}
+	// Express that 60 is one hour
+	// Express that less than 60 will be defined in minutes
+	// Equation that divides the amount of time by 60, then takes the remainder
+	// and puts that into its own variable
+	// Then make it so that the final amount is expressed in a ratio "" + : + ""
+// console.log(timeConvert(num));
+
+// Use the parse 
+// // To parse out integers:
+// // This is the initial equation: console.log(parseInt(100/55)).
+// // Now, we can isolate just the integers of it, using:
+// console.log(parseInt(100/55))
+
+// Remember:
+// 60/60 = 1
+// 61/60 = 1.016666666666666
+// 63%60 = 3
+// 125%60 = 5
+// We can parse out the remainders and convert them into minutes, maybe by multiplying them by 60, then turning
+// them into some whole number, then adding them to the final expression/console log, etc.
+
+
 
 // 9.	Write the function findStr(str, long) taking two strings as parameters and return how many str you can find in long. Assume Str is not empty string.
 // Example:
@@ -146,7 +224,23 @@ console.log(OddAdding(5));
 // 	findStr(“o”, “daodo”) => 2
 // 	findStr(“ha”,”abcde”)=> 0
 
-// function findStr(str, long){}
+// Have to make str into something that the system will look for
+// Make long into a string that will be searched according to str
+
+// function findStr(str, long){
+// // the number of letters in the str
+// let len = str.length;
+// // len = 2
+// let longArr = [];
+// for(let i = 0; i < long.length; i++){
+// 	if(long.slice(i,i+len)==str){
+// 		accumulator++;
+// 	}
+//  }
+//  return accumulator;
+// }
+// findStr("hi","hello");
+
 
 // 10.	Write the function selfDividingNumbers(left, right) taking two number bound as parameters and returns an array of every possible self dividing number between 
 // them, including the bounds. 
@@ -158,7 +252,31 @@ console.log(OddAdding(5));
 // 	selfDividingNumbers(1, 10) => [1,2,3,4,5,6,7,8,9]
 // selfDividingNumbers(12, 21) => [12, 15]
 
-// function selfDividingNumbers(left, right){}
+// function selfDividingNumbers(left, right){
+	var myArr = [];
+	for(var i = left; i<=right;i++){
+		// check if i is selfdividing number
+		if (isSelfDividing(i)){
+			myArr.push(i);
+		}
+	}
+	return myArr;
+}
+
+
+// Helper function:
+// Is given number self dividing number?
+// return true if the given number is self dividing
+// return false if the given number is not self dividing
+function isSelfDividing(num){
+	
+}
+
+// selfDividingNumbers();
+
+
+
+
 
 // Extra Credit:
 // Write the function moveZeros(nums) taking an arry of numbers and move all 0’s to the end of it while maintaining the relative order of the non-zero elements. For example:
@@ -186,7 +304,7 @@ console.log(OddAdding(5));
 
 // // Splitting strings into an array:
 // var myVar = "Hello World, 123"
-// var myArr = myVar.split(",");
+// var myArr = myVar.split(" ");
 // console.log(myArr);
 
 // // Reverse
