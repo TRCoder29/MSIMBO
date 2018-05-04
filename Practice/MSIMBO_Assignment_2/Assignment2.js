@@ -22,7 +22,7 @@ function printInt(num){
 
 // Find an additional way to do this for extra credit.
 
-
+// ------------------------------------------------------------------------------------------------------------------
 // 2.	Write the function printIntRev(n) taking one parameter n and  print all natural numbers in reverse (from n to 1) in console.
 
 function printIntRev(num){
@@ -35,8 +35,9 @@ function printIntRev(num){
 
 // Find an additional way to do this for extra credit.
 
-
-// 3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’ if x is a string; and return boolean if x is a boolean. Otherwise returns -1. 
+// ------------------------------------------------------------------------------------------------------------------
+// 3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’
+// if x is a string; and return boolean if x is a boolean. Otherwise returns -1. 
 // E.g. checkInput(5) => ‘number’
 //        checkInput(‘hello’)=> ‘string’
 //        checkInput(‘5’) => ‘string’
@@ -71,7 +72,7 @@ function checkInput(x){
 // Find an additional way to do this for extra credit.
 // Switch statement would also work for this.
 
-
+// ------------------------------------------------------------------------------------------------------------------
 // 4.	Write the function simpleEvenAdding(num) taking a number and add up all the even numbers from 1 to num. 
 // 	Examples: simpleEvenAdding(5) => 6 (because 2+4 = 6)
 // 	       simpleEvenAdding(10) => 30 (because 2+4+6+8+10 = 30)
@@ -91,8 +92,10 @@ function simpleEvenAdding(num){
 
 // Find an additional way to do this for extra credit.
 
+// ------------------------------------------------------------------------------------------------------------------
+// *5.	Write the function letterCapitalize(str) taking a string and capitalized the first letter of each word.
+// The given words will be separated by only one space.
 
-// *5.	Write the function letterCapitalize(str) taking a string and capitalized the first letter of each word. The given words will be separated by only one space.
 // 	Examples:
 // 		letterCapitalize(“hello world”) = “Hello Word”
 // letterCapitalize(“you cannot find the answer online”) = “You Cannot Find The Answer Online”
@@ -116,7 +119,7 @@ function letterCapitalize(str){
 
 // Find an additional way to do this for extra credit.
 
-
+// ------------------------------------------------------------------------------------------------------------------
 // 6.	Write the function simpleReverse(str) taking a string and return the string in reversed order. 
 // 	Examples:
 // 		simpleReverse(‘hello’) => ‘olleh’
@@ -131,8 +134,9 @@ function simpleReverse(str){
 }
 // console.log(simpleReverse("Happy Birthday"));
 
-
-// 7.	Write the function findDiff(arr) taking a array of numbers as parameter and return the difference between the maximum number and the minimum number (max - min). 
+// ------------------------------------------------------------------------------------------------------------------
+// 7.	Write the function findDiff(arr) taking a array of numbers as parameter and return the difference between the maximum number
+// and the minimum number (max - min). 
 // 	Examples:
 // 	findDiff([1,2,4,6,20, 3]) => 19 (Because 20 - 1 = 19)
 // 	findDiff([24, 22, 23, 22, 24]) => 2 (Because 24 - 22 = 2)
@@ -151,8 +155,9 @@ function findDiff(arr){
 }
 // console.log(findDiff());
 
-
-// 8.	Write the function timeConvert(num) taking a number as parameter and return the number of hours and minutes the parameter converts to. Seperate the number of hours and minutes with a colon.
+// ------------------------------------------------------------------------------------------------------------------
+// 8.	Write the function timeConvert(num) taking a number as parameter and return the number of hours and minutes the parameter converts to.
+// Seperate the number of hours and minutes with a colon.
 // 	Example:
 // 		timeConvert(61) => 1:1
 // 		timeConvert(63) => 1:3
@@ -169,26 +174,52 @@ function timeConvert(num){
 
 // console.log(timeConvert(300));
 
-
-// 9.	Write the function findStr(str, long) taking two strings as parameters and return how many str you can find in long. Assume Str is not empty string.
+// ------------------------------------------------------------------------------------------------------------------
+// *9.	Write the function findStr(str, long) taking two strings as parameters and return how many str you can find in long.
+// Assume Str is not empty string.
 // Example:
 // 	findStr(“hi”, “dasdhidasdahidashi”) => 3
 // 	findStr(“o”, “daodo”) => 2
 // 	findStr(“ha”,”abcde”)=> 0
 
 
+// Have to make str into something that the system will look for
+// Make long into a string that will be searched according to str
+
 function findStr(str, long){
-	// var = str
-	// var = long
-	for(var i=0; i<long.length; i++){
+	var counter = 0;
+	var answer = str;
+	var splitLetters = long.split(str);
+	for (var i=0;i<long.length;i++){
+	} if (splitLetters){
+		continue;
+	} else {
+		counter++;
 	}
 }
 findStr("hi", "dasdhidasdahidashi");
 
-// console.log(long%str)
+// function findStr(str, long){
+// 	var newArray = [];
+// 	// var answer = str;
+// 	var splitLetters = long.split(str);
+// 	for (var i=str;i<long.length;i++){
+// 		if (str !== splitLetters)
+// 		newArray.push(i);
+// 	} else {
+// 		break;
+// 	}
+// 	return newArray.length;
+// }
+// findStr("hi", "dasdhidasdahidashi");
 
-// Have to make str into something that the system will look for
-// Make long into a string that will be searched according to str
+
+	// int index = str.indexOf(long);
+ 	//System.out.println(index);
+
+
+	// var strNum = str.tonumber();
+	// var longNum = long.tonumber();
 
 // function findStr(str, long){
 // // the number of letters in the str
@@ -204,16 +235,30 @@ findStr("hi", "dasdhidasdahidashi");
 // }
 // findStr("hi","hello");
 
+// ------------------------------------------------------------------------------------------------------------------
+// 10.	Write the function selfDividingNumbers(left, right) taking two number bound as parameters and returns an array of every
+// possible self dividing number between them, including the bounds. 
 
-// 10.	Write the function selfDividingNumbers(left, right) taking two number bound as parameters and returns an array of every possible self dividing number between 
-// them, including the bounds. 
-
-// Hint: A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because 128 % 1 ==0, 128 % 2 == 0 and 128 % 8 == 0. 
+// Hint: A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number
+// because 128 % 1 ==0, 128 % 2 == 0 and 128 % 8 == 0. 
 
 // Examples:
 // 	selfDividingNumbers(1, 22) => [1,2,3,4,5,6,7,8,9,11,12,15,22]
 // 	selfDividingNumbers(1, 10) => [1,2,3,4,5,6,7,8,9]
 // selfDividingNumbers(12, 21) => [12, 15]
+
+
+
+// function selfDividingNumbers(left, right){
+// 	var newArray = [];
+// 	for(var i=0; i<=right; i++){
+// 		return newArray;
+// 	}
+// }
+// selfDividingNumbers(1, 22);
+
+
+
 
 // function selfDividingNumbers(left, right){
 	// var myArr = [];
@@ -226,35 +271,60 @@ findStr("hi", "dasdhidasdahidashi");
 	// return myArr;
 // }
 
+// selfDividingNumbers();
+
+// function selfDividingNumbers(left, right){
+//     var selfDiv = [], result;
+//     for(left; left < right +1; left++) {
+//         for(var i=0; i<left.toString().length; i++) {
+//             if(left % left.toString().charAt(i) === 0 && left.toString().charAt(i) !== 0 ) {
+//                 result = true;
+//             }
+//             else {
+//                 result = false;
+//                 break;
+//             }        
+//         }
+//         if(result == true)
+//             selfDiv.push(left);
+//     }
+//     return selfDiv;
+// }
+// console.log(selfDividingNumbers(1, 22));
+
 
 // Helper function:
 // Is given number self dividing number?
 // return true if the given number is self dividing
 // return false if the given number is not self dividing
-function isSelfDividing(num){
-	
-}
-
-// selfDividingNumbers();
-
-
-
 
 
 // Extra Credit:
-// Write the function moveZeros(nums) taking an arry of numbers and move all 0’s to the end of it while maintaining the relative order of the non-zero elements. For example:
+// Write the function moveZeros(nums) taking an arry of numbers and move all 0’s to the end of it while maintaining
+// the relative order of the non-zero elements. For example:
 // moveZeros([0,1,0,3,12]) => [1,3,12,0,0]
 // moveZeros([1,2,0,0,2,312,33,0,0]=>[1,2,2,312,33]
 // moveZeros([0,0,0])=>[0,0,0]
 // moveZeros([1,2,312,11,2]) => [1,2,312,11,2]
 
-// function moveZeros(nums){}
+function moveZeros(nums){
+	var myArr = [];
+	for(var i = nums; i<=length.nums;i++){
+		if (i>=1){
+			myArr.push(i);
+		}
+	}
+}
+moveZeros([0,1,0,3,12]);
 
+
+
+// ------------------------------------------------------------------------------------------------------------------
 // Deliverables
 // 	Send your assignment2.js while email to shiyu3169@gmail.com
 
 // Note: Extra credit for finding more than one way to answer the question.
-
+// ------------------------------------------------------------------------------------------------------------------
 
 // Hints:
 // myvar = true;
