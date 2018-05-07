@@ -13,14 +13,15 @@ function printInt(num){
 
 // printInt(30);
 
-// while (i<=num;){
-// 	console.log(i);
-// 	i++;
-// }
-
+function printInt(num){
+var i = 1;
+while (i<=num){
+	console.log(i);
+	i++;
+	}
+}
 // printInt(30);
 
-// Find an additional way to do this for extra credit.
 
 // ------------------------------------------------------------------------------------------------------------------
 // 2.	Write the function printIntRev(n) taking one parameter n and  print all natural numbers in reverse (from n to 1) in console.
@@ -31,9 +32,17 @@ function printIntRev(num){
 	}
 }
 
-// printIntRev(40);
+// printIntRev(30);
 
-// Find an additional way to do this for extra credit.
+function printIntRev(num){
+var i = num;
+while (i>=1){
+	console.log(i);
+	i--;
+ }
+}
+// printIntRev(30);
+
 
 // ------------------------------------------------------------------------------------------------------------------
 // 3.	Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’
@@ -69,8 +78,34 @@ function checkInput(x){
 
 // console.log(checkInput(true));
 
-// Find an additional way to do this for extra credit.
-// Switch statement would also work for this.
+
+function checkInput(x){
+switch(x) {
+case typeof x == 'number':
+console.log("number");
+break;
+case typeof x == 'string':
+console.log("string.");
+break;
+case typeof x == 'boolean':
+console.log("boolean");
+break;
+default:
+console.log(-1);
+ }
+}
+
+// checkInput(true);
+
+
+// var type = typeof x;
+// if (type == 'number' || type == 'string' || type == 'boolean'){
+// 	return type
+// } else{
+// 	return -1;
+// }
+
+
 
 // ------------------------------------------------------------------------------------------------------------------
 // 4.	Write the function simpleEvenAdding(num) taking a number and add up all the even numbers from 1 to num. 
@@ -89,8 +124,6 @@ function simpleEvenAdding(num){
 }
 
 // console.log(simpleEvenAdding(5));
-
-// Find an additional way to do this for extra credit.
 
 // ------------------------------------------------------------------------------------------------------------------
 // *5.	Write the function letterCapitalize(str) taking a string and capitalized the first letter of each word.
@@ -115,9 +148,17 @@ function letterCapitalize(str){
 // console.log(letterCapitalize("you already know"));
 
 
-// Note, find a way to get rid of that extra space before "you"
+function letterCapitalize(str){
+	var splitArray = str.split(" ");
+	var newString = "";
 
-// Find an additional way to do this for extra credit.
+	for(var i=0; i<splitArray.length;i++){
+		newString += " " + splitArray[i][0].toUpperCase( + splitArray[i].slice(1));
+	}
+	return newString.slice(1);
+}
+// console.log(letterCapitalize("you already know"));
+
 
 // ------------------------------------------------------------------------------------------------------------------
 // 6.	Write the function simpleReverse(str) taking a string and return the string in reversed order. 
@@ -133,6 +174,7 @@ function simpleReverse(str){
 	return letterSplit.join("");
 }
 // console.log(simpleReverse("Happy Birthday"));
+
 
 // ------------------------------------------------------------------------------------------------------------------
 // 7.	Write the function findDiff(arr) taking a array of numbers as parameter and return the difference between the maximum number
@@ -153,7 +195,9 @@ function findDiff(arr){
 	}
 	return arrDiff;
 }
-// console.log(findDiff());
+// console.log(findDiff([1,2,4,6,20, 3]));
+
+
 
 // ------------------------------------------------------------------------------------------------------------------
 // 8.	Write the function timeConvert(num) taking a number as parameter and return the number of hours and minutes the parameter converts to.
@@ -174,6 +218,7 @@ function timeConvert(num){
 
 // console.log(timeConvert(300));
 
+
 // ------------------------------------------------------------------------------------------------------------------
 // *9.	Write the function findStr(str, long) taking two strings as parameters and return how many str you can find in long.
 // Assume Str is not empty string.
@@ -188,52 +233,19 @@ function timeConvert(num){
 
 function findStr(str, long){
 	var counter = 0;
-	var answer = str;
-	var splitLetters = long.split(str);
+	var newArray = [];
+	// var answer = str;
+	var splitLetters = long.split("");
 	for (var i=0;i<long.length;i++){
-	} if (splitLetters){
-		continue;
-	} else {
-		counter++;
+	} if (splitLetters!=i){
+		return counter++;
+		console.log(counter++);
 	}
 }
-findStr("hi", "dasdhidasdahidashi");
 
-// function findStr(str, long){
-// 	var newArray = [];
-// 	// var answer = str;
-// 	var splitLetters = long.split(str);
-// 	for (var i=str;i<long.length;i++){
-// 		if (str !== splitLetters)
-// 		newArray.push(i);
-// 	} else {
-// 		break;
-// 	}
-// 	return newArray.length;
-// }
-// findStr("hi", "dasdhidasdahidashi");
+// console.log(findStr("hi", "dasdhidasdahidashi"));
 
 
-	// int index = str.indexOf(long);
- 	//System.out.println(index);
-
-
-	// var strNum = str.tonumber();
-	// var longNum = long.tonumber();
-
-// function findStr(str, long){
-// // the number of letters in the str
-// let len = str.length;
-// // len = 2
-// let longArr = [];
-// for(let i = 0; i < long.length; i++){
-// 	if(long.slice(i,i+len)==str){
-// 		accumulator++;
-// 	}
-//  }
-//  return accumulator;
-// }
-// findStr("hi","hello");
 
 // ------------------------------------------------------------------------------------------------------------------
 // 10.	Write the function selfDividingNumbers(left, right) taking two number bound as parameters and returns an array of every
@@ -259,6 +271,16 @@ findStr("hi", "dasdhidasdahidashi");
 
 
 
+// function selfDividingNumbers(left, right){
+// 	for (let i=left; i<=right; i++){
+// 		if (isSelfDividing(i)){
+// 			myArray.push(i);
+// 		}
+// 	}
+// 	return myArray
+// }
+// console.log(selfDividingNumbers(1,22));
+
 
 // function selfDividingNumbers(left, right){
 	// var myArr = [];
@@ -272,26 +294,6 @@ findStr("hi", "dasdhidasdahidashi");
 // }
 
 // selfDividingNumbers();
-
-// function selfDividingNumbers(left, right){
-//     var selfDiv = [], result;
-//     for(left; left < right +1; left++) {
-//         for(var i=0; i<left.toString().length; i++) {
-//             if(left % left.toString().charAt(i) === 0 && left.toString().charAt(i) !== 0 ) {
-//                 result = true;
-//             }
-//             else {
-//                 result = false;
-//                 break;
-//             }        
-//         }
-//         if(result == true)
-//             selfDiv.push(left);
-//     }
-//     return selfDiv;
-// }
-// console.log(selfDividingNumbers(1, 22));
-
 
 // Helper function:
 // Is given number self dividing number?
@@ -308,14 +310,15 @@ findStr("hi", "dasdhidasdahidashi");
 // moveZeros([1,2,312,11,2]) => [1,2,312,11,2]
 
 function moveZeros(nums){
-	var myArr = [];
-	for(var i = nums; i<=length.nums;i++){
-		if (i>=1){
-			myArr.push(i);
+	var newArray = [];
+	for(var i = 0; i<=length.nums;i++){
+		if (i==0){
+		return newArray.push([i]);
 		}
 	}
 }
 moveZeros([0,1,0,3,12]);
+
 
 
 
@@ -325,118 +328,3 @@ moveZeros([0,1,0,3,12]);
 
 // Note: Extra credit for finding more than one way to answer the question.
 // ------------------------------------------------------------------------------------------------------------------
-
-// Hints:
-// myvar = true;
-// console.log(typeof 1==1)
-
-// // Splitting strings into single letters:
-// var myVar = "Hello World, 123"
-// var myArr = myVar.split("");
-// console.log(myArr);
-
-// // Splitting strings into an array:
-// var myVar = "Hello World, 123"
-// var myArr = myVar.split(" ");
-// console.log(myArr);
-
-// // Reverse
-// var myArr = ["hello", "world"];
-// console.log(myArr.reverse());
-
-// // Uppercase
-// console.log("Hello".toUpperCase())
-
-// // Pull out the different items within a string:
-// console.log("hello".slice(2, 3))
-
-// // or
-// console.log("hello".substring(1))
-
-// // Find the maximum number:
-// console.log(Math.max(1,2,3,4))
-
-// // Find the minimum number:
-// console.log(Math.min(1,2,3,4))
-
-// // To parse out integers:
-// // This is the initial equation: console.log(parseInt(100/55)).
-// // Now, we can isolate just the integers of it, using:
-// console.log(parseInt(100/55))
-
-// // or
-// console.log(100%55)
-
-
-// function letterCapitalize(str){
-// 	str.split(" ").slice(1).toUpperCase();
-// 	// console.log(str.toUpperCase());
-// 	return;
-// }
-
-// letterCapitalize();
-
-// Class Hint:
-// function letterCapitalize (str){
-// 	// split str into array of words
-// 	var strArray = str.split(" ")
-// 	return strArray;
-// }
-
-// // Splitting strings into an array:
-// var myVar = "Hello World, 123"
-// var myArr = myVar.split(" ");
-// console.log(myArr);
-
-
-// // Splitting strings into single letters:
-// var myVar = "Hello World, 123"
-// var myArr = myVar.split("");
-// console.log(myArr);
-
-// // Reverse
-// var myArr = ["hello", "world"];
-// console.log(myArr.reverse());
-
-// Play around with these commands:
-// "hello".split("")
-// "hello"[0]
-
-// Use the parse 
-// // To parse out integers:
-// // This is the initial equation: console.log(parseInt(100/55)).
-// // Now, we can isolate just the integers of it, using:
-// console.log(parseInt(100/55))
-
-// Remember:
-// 60/60 = 1
-// 61/60 = 1.016666666666666
-// 63%60 = 3
-// 125%60 = 5
-// We can parse out the remainders and convert them into minutes, maybe by multiplying them by 60, then turning
-// them into some whole number, then adding them to the final expression/console log, etc.
-
-// From class:
-// function simpleAdding(num){
-// 	let result = 0;
-// 	// loop from 1 to n
-// 	for(let i=1; i<= n; i++){
-// 		result +=i;
-// 	}
-// 	return result;
-// }
-// console.log(simpleAdding());
-
-// function simpleOddAdding(n){
-// 	// the result of adding
-// 	var result = 0;
-// 	// loop from 1 to n
-// 	for (let i=1; 1<=n; i++){
-// 		// check if i is odd number
-// 		if (i%2 ==1){
-// 			result +=i;
-// 		}
-// 		return result;
-// 	}
-// }
-// console.log(simpleOddAdding());

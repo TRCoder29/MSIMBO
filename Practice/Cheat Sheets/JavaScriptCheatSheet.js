@@ -49,7 +49,7 @@ document.write(the_date.getFullYear());
 // alert(colors.length);
 
 // var person={
-// 	firstName: "Alice",
+// 	firstName: "Alicia",
 // 	lastName: "Smith",
 // 	age: 32,
 // 	Children: ['Alice', 'Bob', 'Camile']
@@ -727,3 +727,356 @@ document.write(the_date.getFullYear());
 // console.log(''==false);
 
 // alert("Hello World!")
+
+// var i = 10;
+// var k = 10
+// i+=k;
+
+// console.log(i);
+
+// function test(){
+// 	// document.write("hello")
+// 	// console.log("hello")
+// 	return "hello";
+// 	console.log("hello");
+// }
+
+// console.log(test() + " " + "world");
+// document.write(test());
+
+// function letterCapitalize(sayHi, sayBye){
+// 	console.log(sayHi.toUpperCase());
+// 	console.log(sayBye.toUpperCase());
+// }
+
+// letterCapitalize("Hello", "Bye");
+
+// function printInt(num){
+// 	for(i=1; i<=num; i++){
+// 		console.log(i);
+// 	}
+// }
+
+// printInt(30);
+
+// Examples from class:
+
+// var i = 1;
+// while (i<=n){
+// 	console.log(i);
+// 	i++;
+// }
+
+// or
+// for (var i=1; 1<=n; i++){
+// 	console.log(i);
+// }
+
+// function test(str){
+// 	console.log(str);
+// }
+
+// test();
+
+// remove letters from a string
+"hello".slice()
+
+str.slice(1).toUpperCase();
+
+// function simpleEvenAdding(num){
+// 	var answer = 0;
+// 	for(var i=1; i<=num; i++){
+// 		if (i%2 == 0){
+// 			result +=i;
+// 		}
+// 	}
+// 	return answer;
+// }
+
+// console.log(simpleEvenAdding(5));
+
+// function simpleEvenAdding(num){
+// 	var answer = 0;
+// 	for(var i=0; i<=num; i+=2){
+// 		result +=i;
+// 	}
+// 	return answer;
+// }
+
+// console.log(simpleEvenAdding(5));
+
+// Find an additional way to do this for extra credit.
+
+
+function findDiff(arr){
+	// var max = 0;
+	// var min = 9999999999999;
+	var min = arr[0];
+	var max = arr[0];
+	for (var i=0; i<arr.length; i++){
+		if (arr[i]>max){
+			max=arr[i];
+		}
+		if (arr[i]<min){
+			min=arr[i];
+		}
+	}
+}
+// console.log(findDiff([1,2,4,6,20, 3]));
+
+
+// function timeConvert(num){
+// 	return parseInt(num/60 + ":" num%60);
+// }
+
+// console.log(timeConvert(300));
+
+
+// function simpleReverse(str){
+// 	myArray = str.split("").reverse();
+// 	for (var=0; i<str.length; i++){
+// 		newString += myArray[i];
+// 	}
+// 	return myArray;
+// }
+// console.log(simpleReverse("Happy Birthday"));
+
+// function simpleReverse(str){
+// 	return str.split("").reverse().join('');
+}
+// console.log(simpleReverse("Happy Birthday"));
+
+function findStr(str, long){
+	return long.split(str)-1
+}
+// findStr("hi", "dasdhidasdahidashi");
+
+// function findStr(str, long){
+// 	var newArray = [];
+// 	// var answer = str;
+// 	var splitLetters = long.split(str);
+// 	for (var i=str;i<long.length;i++){
+// 		if (str !== splitLetters)
+// 		newArray.push(i);
+// 	} else {
+// 		break;
+// 	}
+// 	return newArray.length;
+// }
+// findStr("hi", "dasdhidasdahidashi");
+
+
+	// int index = str.indexOf(long);
+ 	//System.out.println(index);
+
+
+	// var strNum = str.tonumber();
+	// var longNum = long.tonumber();
+
+// function findStr(str, long){
+// // the number of letters in the str
+// let len = str.length;
+// // len = 2
+// let longArr = [];
+// for(let i = 0; i < long.length; i++){
+// 	if(long.slice(i,i+len)==str){
+// 		accumulator++;
+// 	}
+//  }
+//  return accumulator;
+// }
+// findStr("hi","hello");
+
+// function isSelfDividing(num){
+// 	// split num into digits
+// 	var myString = num.toString().split("")
+// 	// use num/each digit to check if they are divisible
+// 	for (let i = 0; i<myArray.length; i++){
+// 		if (num % parseInt(myArray[i]) != 0){
+// 		return false;
+// 		}
+// 	}
+// }
+// console.log(selfDividingNumbers(5,22));
+
+// function selfDividingNumbers(left, right){
+	// var myArr = [];
+	// for(var i = left; i<=right;i++){
+	// 	// check if i is selfdividing number
+	// 	if (isSelfDividing(i)){
+	// 		myArr.push(i);
+	// 	}
+	// }
+	// return myArr;
+// }
+
+// selfDividingNumbers();
+
+// function selfDividingNumbers(left, right){
+//     var selfDiv = [], result;
+//     for(left; left < right +1; left++) {
+//         for(var i=0; i<left.toString().length; i++) {
+//             if(left % left.toString().charAt(i) === 0 && left.toString().charAt(i) !== 0 ) {
+//                 result = true;
+//             }
+//             else {
+//                 result = false;
+//                 break;
+//             }        
+//         }
+//         if(result == true)
+//             selfDiv.push(left);
+//     }
+//     return selfDiv;
+// }
+// console.log(selfDividingNumbers(1, 22));
+
+// function simpleEvenAdding(num){
+// 	var answer = 0;
+// 	for(var i=0; i<=num; i+=2){
+// 		answer=answer+i;
+// 	}
+// 	return answer;
+// }
+
+
+// Hints:
+// myvar = true;
+// console.log(typeof 1==1)
+
+// // Splitting strings into single letters:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split("");
+// console.log(myArr);
+
+// // Splitting strings into an array:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split(" ");
+// console.log(myArr);
+
+// // Reverse
+// var myArr = ["hello", "world"];
+// console.log(myArr.reverse());
+
+// // Uppercase
+// console.log("Hello".toUpperCase())
+
+// // Pull out the different items within a string:
+// console.log("hello".slice(2, 3))
+
+// // or
+// console.log("hello".substring(1))
+
+// // Find the maximum number:
+// console.log(Math.max(1,2,3,4))
+
+// // Find the minimum number:
+// console.log(Math.min(1,2,3,4))
+
+// // To parse out integers:
+// // This is the initial equation: console.log(parseInt(100/55)).
+// // Now, we can isolate just the integers of it, using:
+// console.log(parseInt(100/55))
+
+// // or
+// console.log(100%55)
+
+
+// function letterCapitalize(str){
+// 	str.split(" ").slice(1).toUpperCase();
+// 	// console.log(str.toUpperCase());
+// 	return;
+// }
+
+// letterCapitalize();
+
+// Class Hint:
+// function letterCapitalize (str){
+// 	// split str into array of words
+// 	var strArray = str.split(" ")
+// 	return strArray;
+// }
+
+// // Splitting strings into an array:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split(" ");
+// console.log(myArr);
+
+
+// // Splitting strings into single letters:
+// var myVar = "Hello World, 123"
+// var myArr = myVar.split("");
+// console.log(myArr);
+
+// // Reverse
+// var myArr = ["hello", "world"];
+// console.log(myArr.reverse());
+
+// Play around with these commands:
+// "hello".split("")
+// "hello"[0]
+
+// Use the parse 
+// // To parse out integers:
+// // This is the initial equation: console.log(parseInt(100/55)).
+// // Now, we can isolate just the integers of it, using:
+// console.log(parseInt(100/55))
+
+// Remember:
+// 60/60 = 1
+// 61/60 = 1.016666666666666
+// 63%60 = 3
+// 125%60 = 5
+// We can parse out the remainders and convert them into minutes, maybe by multiplying them by 60, then turning
+// them into some whole number, then adding them to the final expression/console log, etc.
+
+// From class:
+// function simpleAdding(num){
+// 	let result = 0;
+// 	// loop from 1 to n
+// 	for(let i=1; i<= n; i++){
+// 		result +=i;
+// 	}
+// 	return result;
+// }
+// console.log(simpleAdding());
+
+// function simpleOddAdding(n){
+// 	// the result of adding
+// 	var result = 0;
+// 	// loop from 1 to n
+// 	for (let i=1; 1<=n; i++){
+// 		// check if i is odd number
+// 		if (i%2 ==1){
+// 			result +=i;
+// 		}
+// 		return result;
+// 	}
+// }
+// console.log(simpleOddAdding());
+
+function findStr(str, long){
+	var myArray = long.split("");
+	var counter = 0;
+	for (i=0; i<myArray.length; i++){
+		if (myArray[i] == str){
+			counter++;
+
+		}
+	}
+	return counter;
+}
+// findStr("hi", "dasdhidasdahidashi");
+
+
+function findStr(str, long){
+	var counter = 0;
+	for (i=0; str.length + i <= long.length; i++){
+		if (long.slice(i,str.length + i) ===str){
+			counter++;
+		}
+	}
+	return counter;
+}
+// findStr("hi", "dasdhidasdahidashi");
+
