@@ -1,5 +1,6 @@
 // MSIMBO
 // JavaScript Practice
+// Taja Ricketts
 
 
 // Questions
@@ -317,7 +318,7 @@ function moveZeros(nums){
 		}
 	}
 }
-moveZeros([0,1,0,3,12]);
+// moveZeros([0,1,0,3,12]);
 
 
 
