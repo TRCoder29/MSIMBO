@@ -1080,3 +1080,13 @@ function findStr(str, long){
 }
 // findStr("hi", "dasdhidasdahidashi");
 
+// function moveZeros(nums){
+// 	var myArr = [];
+// 	for(var i = 0; i<=length.nums;i++){
+// 		if (i==0){
+// 			return myArr.push(i);
+// 			console.log(myArr.push(i));
+// 		}
+// 	}
+// }
+// moveZeros([0,1,0,3,12]);
