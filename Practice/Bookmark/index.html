@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,4 +58,65 @@
 	</div>
 	<script src="BM.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookmark</title>
+
+	<!-- Meta tags for making website for mobile-->
+ 	<meta name="apple-mobile-web-app-capable" content="yes">
+ 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+ 	<meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+ 	<!-- Boostrap Stylesheet -->
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ 	<!-- CSS Stylesheet -->
+ 	<link rel="stylesheet" type="text/css" href="BStyle.css">
+
+</head>
+<!-- Bookmark Entry Form with Script Instructions to Access Bookmarks -->
+<body onload="fetchBookMarks()">
+	<!-- Container - holds all together -->
+	<div class="container">
+		<!-- Grey Bookmark Title -->
+		<h3 class="text-muted">Bookmarker</h3>
+		<!-- Class: Grey Background -->
+		<div class="jumbotron">
+			<h2>Bookmark Your Favorite Sites</h2>
+			<!-- Site Name Field -->
+			<form id="myForm">
+				<!-- Form-Group puts the focus on one area of the form, so it'll group together the label and the input field for "Name", for example, as one unit, and separate that input+label from the other label+input field -->
+				<div class="form-group">
+					<label>Site Name</label>
+					<!-- Form Control puts the label on top of the input field -->
+					<input class="form-control" type="text" name="siteName" id="siteName" placeholder="Enter Your Website Name">
+				</div>
+				<!-- Site URL Field -->
+				<div class="form-group">
+					<label>Site URL</label>
+					<input class="form-control" type="text" name="siteURL" id="siteURL" placeholder="Enter Your Website URL">
+				</div>
+				<!-- Submit Button -->
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+
+		<div>
+			<!-- Search Bar -->
+			<input type="text" class="form-control" name="filter" id="filter" placeholder="Search for Bookmarks...">
+		</div>
+
+		<br>
+		<!-- Where the bookmarks will show up -->
+		<div>
+			<ul class="list-group" id="bookmarksResult"></ul>
+		</div>
+
+		<div id="bookmarksResult"></div>
+
+		<footer>&copy; 2018 Bookmarker</footer>
+	</div>
+	<script src="BM.js"></script>
+</body>
+>>>>>>> 03dec4003b8f522f149ef4e102b0e9c32ff085e8
 </html>
