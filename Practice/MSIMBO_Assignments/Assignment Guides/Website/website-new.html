@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Websites</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Nav bar -->
+	<nav class="row navbar navbar-dark bg-primary fixed-top">
+		<!-- left nav -->
+		<div class="col-sm-4 d-none d-sm-block">
+			<div class="container-fluid">
+				<a class="sw-font-white" href="website-list.html"><i class="fas fa-chevron-left"></i></a>
+				<a class=" sw-left-padding sw-no-underline" href="website-list.html"><b class="sw-font-white">Websites</b></a>
+				<a href="website-new.html"
+				class="sw-font-white float-right"><i class="fas fa-plus"></i></a>
+			</div>
+		</div>
+		<!-- right nav -->
+		<div class="col-sm-8">
+			<div class="container-fluid">
+				<a href="#" class="sw-no-underline"><b class="sw-font-white">New Website</b></a>
+				<a href="website-list.html"
+				class="sw-font-white float-right"><i class="fas fa-check"></i></a>
+			</div>
+		</div>
+	</nav>
+	<!-- left website lists-->
+	<div class="row">
+		<div class="col-sm-4 d-none d-sm-block">
+			<div class="container">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="../Page/page-list.html">MSIMBO</a>
+						<a class="float-right" href="website-edit.html"><i class="fas fa-cogs"></i></a>
+					</li>
+					<li class="list-group-item"><a href="../Page/page-list.html">Address Book</a>
+						<a class="float-right" href="website-edit.html"><i class="fas fa-cogs"></i></a></li>
+					<li class="list-group-item"><a href="../Page/page-list.html">Shiyu Website</a>
+						<a class="float-right" href="website-edit.html"><i class="fas fa-cogs"></i></a></li>
+					<li class="list-group-item"><a href="../Page/page-list.html">Sublime Instruction</a>
+						<a class="float-right" href="website-edit.html"><i class="fas fa-cogs"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- right side form -->
+		<div class="col-sm-8">
+			<div class="container">
+				<form>
+					<!-- Website Name -->
+					<div class="form-group">
+						<label for="website-name"><b>Name</b></label>
+						<input class="form-control" type="text" name="webste-name" placeholder="Input your website name">
+					</div>
+					<!-- Website Description -->
+					<div class="form-group">
+						<label for="website-description">Decription</label>
+						<textarea class="form-control" rows="5" placeholder="Input your description for this website"></textarea>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
