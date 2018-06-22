@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Page } from '../models/page.model.clients';
 import { map } from 'rxjs/operators';
 import { Http, Response } from '@angular/http';
 import { environment } from '../../environments/environment'
@@ -11,6 +10,7 @@ export class OmdbService {
 
 	constructor(private http: Http) { }
 
+	// Source of Data to be Mined/Accessed
 	searchMovie(title: string) {
 		const url = 'http://www.omdbapi.com/?apikey=4e29c677&s=' + title;
 		return this.http.get(url).pipe(map(

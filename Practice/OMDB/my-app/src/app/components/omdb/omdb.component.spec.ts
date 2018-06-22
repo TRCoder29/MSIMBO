@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OmdbtestComponent } from './omdbtest.component';
+import { OmdbComponent } from './omdb.component';
 
-describe('OmdbtestComponent', () => {
-  let component: OmdbtestComponent;
-  let fixture: ComponentFixture<OmdbtestComponent>;
+describe('OmdbComponent', () => {
+  let component: OmdbComponent;
+  let fixture: ComponentFixture<OmdbComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OmdbtestComponent ]
+      declarations: [ OmdbComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OmdbtestComponent);
+    fixture = TestBed.createComponent(OmdbComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

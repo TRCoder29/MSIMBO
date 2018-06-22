@@ -3,11 +3,11 @@ import { NgForm } from '@angular/forms'
 import { OmdbService } from '../../services/omdb.service.client'
 
 @Component({
-  selector: 'app-omdbtest',
-  templateUrl: './omdbtest.component.html',
-  styleUrls: ['./omdbtest.component.css']
+  selector: 'app-omdb',
+  templateUrl: './omdb.component.html',
+  styleUrls: ['./omdb.component.css']
 })
-export class OmdbtestComponent implements OnInit {
+export class OmdbComponent implements OnInit {
 
   @ViewChild('f') searchForm: NgForm;
 
@@ -20,7 +20,9 @@ export class OmdbtestComponent implements OnInit {
   }
 
   search(){
+    // Get user input
   	this.title = this.searchForm.value.title;
+    // Calling searchMovie in omdb client service;
   	this.omdbService.searchMovie(this.title).subscribe(
 		(data: any) => {
 			this.movies = data.Search;
