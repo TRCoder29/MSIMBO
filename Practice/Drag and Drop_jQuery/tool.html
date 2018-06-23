@@ -4,6 +4,12 @@
 	<!-- Title -->
 	<title>Drag and Drop</title>
 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<!-- Link to CSS -->
+  	<link rel="stylesheet" type="text/css" href="tool.css">
+
 	<!-- jQuery Core Code Integration -->
 	<script
 	  src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -18,23 +24,24 @@
 	  crossorigin="anonymous">
 	 </script>
 
-	 <!-- Link to CSS -->
-  	<link rel="stylesheet" type="text/css" href="./tool.css">
+  	<!-- Link to JS -->
+	<script type="text/javascript" src="tool.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid">
-		<h1>Drag and Drop Canvas</h1>
+	<div class="container-fluid sw-full-screen">
+		<h1>Drag and Drop Tools onto Canvas</h1>
 		<div class="row sw-height-100">
 			<div class="col-3 sw-bg-blue tools">
-				<h3 class="tools">Tool 1</h3>
-				<h3 class="tools">Tool 2</h3>
-				<h3 class="tools">Tool 3</h3>
+				<h2>Tools</h2>
+				<h3 class="tool">Tool 1</h3>
+				<h3 class="tool">Tool 2</h3>
+				<h3 class="tool">Tool 3</h3>
+			</div>
+			<div class="col-9 sw-bg-beige canvas">
+				<h2>Canvas</h2>
 			</div>
 		</div>
 	</div>
-
-	<!-- Link to JS -->
-	<script type="text/javascript" src="./tool.js"></script>
 </body>
 </html>

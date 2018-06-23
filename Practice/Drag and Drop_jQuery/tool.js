@@ -1,4 +1,5 @@
 $(init);
+
 function init() {
 	$(".tool").draggable({
 		helper: "clone"
@@ -9,11 +10,13 @@ function init() {
 			// console.log(ui.position);
 			// console.log(ui.draggable[0].innerHTML);
 			var node = {
-				position = ui.position,
-				html = ui.draggable[0].innerHTML
-			};
+				position: ui.position,
+				html: ui.draggable[0].innerHTML
+		};
 			// console.log(node);
-			render(node);
+			if(ui.helper.hasClass('tool')) {
+				render(node);
+			}
 		}
 	})
 }
@@ -23,9 +26,9 @@ function render (node){
 	var dom = $(html).css({
 		position: 'absolute',
 		top: node.position.top,
-		left: node.position.left -= $(".canvas")
+		left: node.position.left -= $(".canvas").position().left
 	})
+	// console.log(dom);
 
-	$(".canvas").append(dom);
-
+	$(".canvas").append(dom.draggable());
 }
