@@ -12,7 +12,7 @@ export class OmdbService {
 
 	// Source of Data to be Mined/Accessed
 	searchMovie(title: string) {
-		const url = 'http://www.omdbapi.com/?apikey=4e29c677&s=' + title;
+		const url = 'http://www.omdbapi.com/?apikey=f064edf4&s=' + title;
 		return this.http.get(url).pipe(map(
 			(response: Response) => {
 				return response.json();
