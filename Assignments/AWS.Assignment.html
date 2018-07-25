@@ -1,0 +1,67 @@
+<!-- Copyright Symbol moved to the bottom of the page (see below) -->
+<html>
+<head>
+	<!-- Increased indent of <head></head> content for cleaner appearance -->
+	<!-- Changed value to content and cool stuff to Cool Stuff -->
+	<meta name="keyword" content="Cool Stuff"/>
+	<link type="application/rss+xml" href="http://site.com/rss.xml" />
+
+	<!-- *External Stylesheet: Would be better positioned in the <head> tag, moved from <body> tag -->
+	<link rel="stylesheet" type="text/css" href="http://site.com/file2.css"/>
+
+	<!-- Internal Stylesheet:
+	*Changed from @import "file1.css" to @import url("file1.css");
+ 	-->
+	<style type="text/css">
+	
+	@import url("file1.css");
+
+	/*Missing closing curly brace added
+		*Removed *html
+		*Added '.' to header, since it appears to be a class (see More inline styling)
+		*Changed width property from width=30 to width:30px;
+		*Changed width:30px; to width:300px; (see More inline styling)*/
+	.header {
+	width:30px;
+	}
+
+	</style>
+<!-- Missing </head> added -->
+</head>
+
+<!-- Stylesheets:
+	*There are three instances of CSS styling in the form of either an external or internal stylesheet, or an inline styling element present in the document.
+	*Both internal and external create conflicts in areas like the header width, even if only one will be read. It's too cluttered and should be condensed.
+	*Also, there is no telling what the styling is for file1.css and file2.css, so more information is needed if we are to choose one or the other. Potentially, both could be used, but it would be easier if there were just one.
+ -->
+
+<body>
+<!-- Increased indent of <body></body> content for cleaner appearance -->
+
+
+
+	<!-- More inline styling:
+		*Added missing </center> tag
+		*Added <h1></h1> tag
+		*Changed my site to My Site for appearance
+		*Assuming that the header class included here is being referenced above, however the styling appears as 30px, while the width=300. I've decided to change:
+			*width:30px; to width:300px;
+			*Remove width="300"
+	 -->
+	<h1><center><font color="#CC0000"><span class="header">My Site</span></center></font></center></h1>
+
+	<!-- Changed content to Content and more content to More Content -->
+	<span>Content<div>More Montent</div></span>
+
+	<br>
+
+</body>
+
+<!-- Copyright name and symbol added as a footer, content changed from company.com to Company.com for appearance -->
+ <!-- copyright company.com -->
+ <footer>Company.com &copy;</footer>
+
+<!-- Added closing tag </html> -->
+</html>
+
+
